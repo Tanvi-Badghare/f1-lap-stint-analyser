@@ -1,0 +1,14 @@
+.fastf1_cache/
+outputs/
+__pycache__/
+*.egg-info/
+.venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.f1cache/
+.openf1_cache/
+web_data/
+*.zipinspect-bundle.py
+inspect-bundle.py
+web_check/ inspect-bundle.py
+inspect_bundle.py

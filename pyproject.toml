@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "f1analyser"
+version = "0.1.0"
+description = "F1 Lap & Stint Performance Analyser (FastF1)"
+requires-python = ">=3.10"
+dependencies = [
+  "fastf1>=3.4",
+  "pandas>=2.0",
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "matplotlib>=3.7",
+  "tabulate>=0.9",
+]
+
+[project.optional-dependencies]
+web = ["streamlit>=1.50", "plotly>=5.20", "requests>=2.30"]
+dev = ["pytest>=7", "streamlit>=1.50", "plotly>=5.20", "requests>=2.30"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
